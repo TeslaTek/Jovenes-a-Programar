@@ -1,0 +1,129 @@
+body{
+	background-color: black;
+}
+
+#cabecera #buscador{
+	float:right;
+	}
+
+#cabecera{
+	background-color: #FF2026;
+	position: fixed;
+	width: 100%;
+	left: 0; 
+	top: 0; 
+	position: fixed; 
+	height: 100px;
+}
+
+#principal {
+	margin:1% auto 0% 10%;
+}
+#principal h2{
+	text-align: center;
+	color: #0D36AA;
+	margin-left: -20%; 
+	padding: auto;
+}
+
+#contenedor{
+	width:100%;
+	width:expression(document.body.clientWidth> 901? "900px":"auto");
+	margin:0 auto;
+	background-color: #EF5B3F;
+	padding-top: 100px;
+}
+
+#cabecera #logo{
+	display: block;
+	float:left;
+	margin:1% auto auto 1%;
+}
+#cabecera #logo img{
+	width: 50px;
+	height: 50px;
+
+}
+
+#menu ul#menu_principal li{
+	display:inline;
+	float:left; 
+	display: inline-block;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;}
+
+ul,ul li{
+	margin:0;
+	padding:0;
+	list-style:none;}
+
+	#menu a {
+	background-color:#FE2E2E;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0px 0px 0px 0px;
+    cursor: pointer;
+	border-radius: 8px;
+	border: 2px solid;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.enlaces {
+	float: left;
+}
+
+.clear{
+	clear:both;
+}
+
+h1,h2,form{
+	margin:0;
+	padding:0;
+}
+
+img {
+	width:350px;
+	height:350px;
+}
+
+#pie{
+	background-color:#FF2026;
+}
+
+#redesSociales img{
+	width:35px;
+	height: 35px; 
+}
+
+td {
+        font-size: 15px;
+        line-height: 20px;
+        padding: 0 20px;
+        text-align: justify;
+        vertical-align: top;
+        width: 50%;
+}
+
+h2{
+	font-size: 35px;
+}
+
+h1{
+	font-size:45px;
+}
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px ) { }
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px ) { }
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px ) { }
