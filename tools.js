@@ -19,13 +19,13 @@ var x = setInterval(function() {
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
     
     // Output the result in an element with id="demo"
-    document.getElementById("CountDown").innerHTML = hours + "h "
-    + minutes + "m " + seconds + "s restantes";
+    document.getElementById("CountDown").innerHTML = hours + " H "
+    + minutes + " M " + seconds + " S  restantes";
     
     // If the count down is over, write some text 
     if (distance < 0) {
         clearInterval(x);
-        document.getElementById("CountDown").innerHTML = "Ofertas del dia - EXPIRED";
+        document.getElementById("CountDown").innerHTML = "-- EXPIRED --";
     }
 }, 1000);
 
