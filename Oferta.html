@@ -8,69 +8,68 @@
 	  <title>OPA! - Ofertas de verdad</title>
 
 	  <link rel="stylesheet" href="css/style.css">
+	  <script src="tools.js"></script> 
 
  </head>
 
-<body>
+<body >
 <!--contenedor-->
 <div id="contenedor">
 <!-- cabecera -->
 	<div id="cabecera">
-		<div id="logo">
-			<h1><span>LOGOTIPO</span></h1>
-		</div>
+		<div id="logo"><p>OPA</p></div>
 
 		<div id="buscador">
-			<form action="proyecto.html#" method="post">
+			<form action="index.html" method="post">
 				Buscar &nbsp; <input name="busqueda" type="text">
 			</form>
 		</div>
-	
-<!-- / cabecera -->
+		 <div class="dropdown" >
+  <button onclick="dropMenu()" class="dropbtn">Menu</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="Oferta.html" >Restaurantes</a>
+    <a href="Oferta.html" >Estética</a>
+    <a href="Oferta.html" >Tiempo Libre</a>
+    <a href="Oferta.html" >Hoteles en Uruguay</a>
+    <a href="Oferta.html" >Viajes Internacionales</a>
+    <a href="Oferta.html" >Servicios varios</a>
+    <form action="index.html" method="post">
+				Buscar &nbsp; <input id="busca" name="busqueda" type="text">
+			</form>
+
+  </div>
+  </div>
+
+
 <!-- Menu principal -->
-	<div id="menu">
+	<nav id="menu">
 		<ul id="menu_principal">
 		
-			<li ><a href="Oferta.html" >Lorem</a></li>
+			<li ><a href="Oferta.html" >Restaurantes</a></li>
 	
-			<li ><a href="Oferta.html">Ipsum</a></li>
+			<li ><a href="Oferta.html">Estética</a></li>
 		
-			<li><a href="Oferta.html">Dolor</a></li>
+			<li><a href="Oferta.html">Tiempo Libre</a></li>
 		
-			<li ><a href="Oferta.html">Sit</a></li>
+			<li ><a href="Oferta.html">Hoteles en Uruguay</a></li>
 	
-			<li ><a href="Oferta.html">Amet</a></li>
+			<li ><a href="Oferta.html">Viajes Internacionales</a></li>
 		
-			<li ><a href="Oferta.html">Lorem</a></li>
-	
-			<li ><a href="Oferta.html">Ipsum</a></li>
+			<li ><a href="Oferta.html">Servicios varios</a></li>
 		
-			<li ><a href="Oferta.html">Dolor</a></li>
-		
-			<li ><a href="Oferta.html">Sit</a></li>
-		
-			<li ><a href="Oferta.html">Amet</a></li>
-		
+
 		</ul>
 		<div class="clear"></div>
-	</div>
-	</div>
+	</nav>
+	
+	</div> 
+	<!-- / cabecera -->
 <!-- / Menu principal -->
 <!-- Principal -->
-	<main id="principal">
-			<h2>Ofertas del dia</h2>
-  <!-- las imagines las puse en tamaño grande para que se vea que la cabecera esta fija-->
+	<main id="principal" onload="banner()">
+			<div id="Banner" class="Rbanner"><h1>Oferta:</h1></div>
 
-			<a href="Oferta.html"><img src="images/imagenO.jpg"></a>
-			<a href="Oferta.html"><img src="images/imagenO.jpg"></a>
-			<a href="Oferta.html"><img src="images/imagenO.jpg"></a>
-			<a href="Oferta.html"><img src="images/imagenO.jpg"></a>
-			<a href="Oferta.html"><img src="images/imagenO.jpg"></a>
-			<a href="Oferta.html"><img src="images/imagenO.jpg"></a>
-			<a href="Oferta.html"><img src="images/imagenO.jpg"></a>
-			<a href="Oferta.html"><img src="images/imagenO.jpg"></a>
-			<a href="Oferta.html"><img src="images/imagenO.jpg"></a>
-			
+			<img src="images/RandomBanner/ArtBanner.jpg">
 	</main>
 <!-- /Principal -->
  <!-- Pie-->

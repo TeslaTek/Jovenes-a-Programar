@@ -47,6 +47,30 @@ body{
 	padding: auto;
 }
 
+.Rbanner {
+
+	width: 900px;
+	height: 100px;
+	background-repeat: no-repeat;
+	padding: 0;
+	margin:0;
+	display: block;
+
+}
+#principal  h1 {
+	width: 900px;
+	height: 100px;
+	background-color: rgba(0,0,0,0.3);
+	font-size: 40px;
+	display: flex;
+	font-weight: bold;
+	color:#fff;
+	text-decoration: none;
+	justify-content: center;
+	align-items: center;
+
+}
+
 #principal a {
 	margin-bottom: 4px;
 	position: static;
