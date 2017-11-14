@@ -5,10 +5,62 @@
 	<meta charset="utf-8">
 	<script src="secondEntrega.js"></script>
 	 <link rel="stylesheet" href="css/formus.css">
+	 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+	<div id="cabecera">
+		<div id="logo"><p>OPA</p></div>
+
+		<div id="buscador">
+			<form action="index.html" method="post">
+				Buscar &nbsp; <input name="busqueda" type="text">
+			</form>
+		</div>
+		
+		 <div class="dropdown" >
+  <button onclick="dropMenu()" class="dropbtn">Menu</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="Oferta.html" >Restaurantes</a>
+    <a href="Oferta.html" >Estética</a>
+    <a href="Oferta.html" >Tiempo Libre</a>
+    <a href="Oferta.html" >Hoteles en Uruguay</a>
+    <a href="Oferta.html" >Viajes Internacionales</a>
+    <a href="Oferta.html" >Servicios varios</a>
+    <form action="index.html" method="post">
+				Buscar &nbsp; <input id="busca" name="busqueda" type="text">
+			</form>
+
+  </div>
+
+</div> 
+
+<!-- Menu principal -->
+	<nav id="menu">
+		<ul id="menu_principal">
+		
+			<li ><a href="Oferta.html" >Restaurantes</a></li>
 	
-		<div  id="Formu" class="Mostrar">
+			<li ><a href="Oferta.html">Estética</a></li>
+		
+			<li><a href="Oferta.html">Tiempo Libre</a></li>
+		
+			<li ><a href="Oferta.html">Hoteles en Uruguay</a></li>
+	
+			<li ><a href="Oferta.html">Viajes Internacionales</a></li>
+		
+			<li ><a href="Oferta.html">Servicios varios</a></li>
+		
+
+		</ul>
+		<div class="clear"></div>
+	</nav>
+<div class="Botones"><div id="carrito"><img src="images/cart.png"></div><div id="user"><a href="Registro.html"><img src="images/NewU2.png"></a></div></div>
+
+	</div>
+
+
+<main >	
 <form  method="post" onsubmit="return Validar(this)" >
 <table class="Tabla"   >
 	<tr>
@@ -72,6 +124,6 @@
 	<tr><td><em>*  Campos obligatorios</em></td></tr>
 </table>
 </form>
-</div>
+</main>
 </body>
 </html>

@@ -1,5 +1,30 @@
+
+*{
+    margin:0;
+    padding: 0;
+}
+
 label {
     	cursor: pointer;
+    }
+
+    main{
+ 
+    }
+    .Tabla  {
+        width: 75%;
+    background-color: #EDD7C2;
+    padding-top: 150px;
+    padding-left: 50px;
+
+    }
+
+    .Tabla tr {
+        width: 20%;
+    }
+    .Tabla td {
+        font-size: 20px;
+
     }
 
     .Tabla em{
@@ -12,3 +37,7 @@ label {
     	border: 3px solid red;
     	background-color: lightyellow;
     }
+
+
+
+}
