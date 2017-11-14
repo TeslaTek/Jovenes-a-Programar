@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registrate para recibir ofertas</title>
+	<meta charset="utf-8">
+	<script src="secondEntrega.js"></script>
+	 <link rel="stylesheet" href="css/formus.css">
+</head>
+<body>
+	
+		<div  id="Formu" class="Mostrar">
+<form  method="post" onsubmit="return Validar(this)" >
+<table class="Tabla"   >
+	<tr>
+		<td><label for="User">User ID: <em>*</em></label></td>
+		<td> <input id="User" type="text" name="UserId" value="" autofocus=""></td>
+		<td><em id="Umensaje"></em></td>
+	</tr>
+	<tr>
+		<td><label for="Pass">Password: <em>*</em></label></td>
+		<td><input id="Pass" type="password" name="password" value=""></td>
+		<td><em id="Pmensaje"></em></td>
+	</tr>
+	<tr>
+		<td><label for="Name">Name: </label></td>
+		<td><input 	id="Name" type="text" name="Nombre" pattern="[A-Za-z\s]{0,20}" title="No puede contener numeros"   value=""></td>
+		<td><em id="Nmensaje"></em></td>
+	</tr>
+	<tr>
+		<td><label for="Dire">Address: </label></td>
+		<td><input 	id="Dire" type="text" name="Direccion" value=""></td>
+		<td><em id="Dmensaje"></em></td>
+	</tr>
+	<tr>
+		<td><label for="Pais">Coutry: </label></td>
+		<td> 
+		<select id="Pais" name="Coutry">
+			  <option value="Empty">Please select a country</option>
+			  <option value="USA">USA</option>
+			  <option value="Uruguay">Uruguay</option>
+			  <option value="Argentina">Argentina</option>
+			  <option value="Mexico">Mexico</option>
+		</select> 
+		</td> 
+	</tr>
+	<tr>
+		<td><label for="Code">Zip Code: </label></td>
+		<td><input id="Code" type="text" name="ZipCode"  pattern="[0-9]{5}" title="Debe ser un número de 5 digitos"  value="" ></td>
+		<td><em id="Zmensaje"></em></td>
+	</tr>
+	<tr>
+		<td><label for="Mail">Mail: </label></td>
+		<td><input 	id="Mail" type="email" name="Mail" value=""></td>
+	</tr>
+	<tr>
+		<td><label><input type="radio" name="Sex" value="Male" checked=""> Male </label></td> 
+		<td><label><input type="radio" name="Sex" value="Female">Female</label></td> 
+	</tr>
+	<tr>
+		<td>Language: </td>
+		<td><label><input id="1" type="checkbox" name="Language" value="English" onclick="Check1(this.id)"> English</label></td>
+		<td><label><input id="2" type="checkbox" name="Language" value="Non-English" onclick="Check1(this.id)"> Non-English</label></td>
+	</tr>
+	<tr>
+		<td><label for="Nota">About: </label>  </td>
+		<td> <textarea 		id="Nota" name="message" rows="10" cols="15"> </textarea> </td>
+	</tr>
+	<tr>
+		<td><input type="submit" name="submit" value="Submit" onclick="return Validar(this) foco()"></td>
+		<td><input type="reset" name="borrar" value="Reset"></td>
+	</tr>
+	<tr><td><em>*  Campos obligatorios</em></td></tr>
+</table>
+</form>
+</div>
+</body>
+</html>

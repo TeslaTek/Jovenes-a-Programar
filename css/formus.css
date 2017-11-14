@@ -1,0 +1,14 @@
+label {
+    	cursor: pointer;
+    }
+
+    .Tabla em{
+    	font-size: 15px;
+    	font-style: italic;
+    	font-weight: bold;
+    	color: red;
+    }
+    .Obligatorio {
+    	border: 3px solid red;
+    	background-color: lightyellow;
+    }

@@ -27,6 +27,27 @@ body{
 	margin-top: 1%;
 	}
 
+.Botones {
+	position: absolute;
+    right: 20px;
+    top: 60px;
+	margin-top: 0px;
+	margin-left: 0px;
+	padding: 0;
+	clear: both;
+	display: inline-flex;	
+}
+
+.Botones img:hover {
+	height: 40px;
+	width: 40px;
+}
+
+#carrito img {
+	height: 32px;
+	width: 32px;
+}
+
 #cabecera{
 	background-color: #E44B3B;
 	position: fixed;
