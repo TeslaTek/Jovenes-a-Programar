@@ -21,8 +21,8 @@ function renderHTML (data) {
         // Obtenemos el contenedor donde se van a desplegar los productos
         var products = $("#products");
         // Generamos el nodo html con los datos que vienen en el JSON 
-        var html = '<a style="background-image: url('+data[i].imagen+')">' + 
-        '<p>'+ data[i].descripcion + '</p></a>'; 
+        var html = '<a  href="Oferta.html"  style="background-image: url('+data[i].imagen+')" >' + 
+        '<p class="Promo">'+ data[i].descripcion + '</p></a>'; 
         // Agregamos en el contenedor de productos el html para cada dato del listado
         products.append(html);
     });

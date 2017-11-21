@@ -54,7 +54,4 @@ window.onclick = function(event) {
 } 
 
 
-    alert("hello moto");
-    $(".Promo").on('click',function(){
-     window.location = "http://www.google.com/";    
-}); 
+ 
