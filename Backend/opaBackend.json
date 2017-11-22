@@ -3,7 +3,10 @@
       "id": 1,
       "name": "electrodomesticos",
       "descripcion": "Descuento en electrodomesticos",
-      "imagen": "images/Ofertas/cafetera.jpg"
+      "imagen": "images/Ofertas/cafetera.jpg",
+      "titulo":"¿Molido o monodosis? Poder elegir es un pequeño gran acierto",
+      "review":"Dos sistemas de preparación: La rapidez y la fácil limpieza hacen que muchas personas se inclinen por el café en monodosis. Con la nueva CE7151 no hace falta elegir entre monodosis de café E.S.E, o café molido para cafeteras expreso, ya que puede funcionar de las dos maneras. Un expresso con toda su crema: Con una bomba de 15 bares, la cafetera expresso CE7151 prepara un café de calidad en casa, con esa crema característica del café elaborado con presión.",
+      "imagenReview":"images/Review/cafetera.png"
     },
     {
       "id": 2,

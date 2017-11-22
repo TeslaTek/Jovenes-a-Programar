@@ -52,6 +52,3 @@ window.onclick = function(event) {
     }
   }
 } 
-
-
- 

@@ -9,8 +9,18 @@
 }
 
 @font-face {
-font-family:Rektec;
+font-family:'Rektec';
 src: url('../Fonts/Extras/Park Lane NF.ttf');
+}
+
+@font-face {
+    font-family: 'Bariol';
+    src: url('../fonts/Bariol-Regular.eot');
+    src: url('../fonts/Bariol-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Bariol-Regular.woff') format('woff'),
+        url('../fonts/Bariol-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 body{
@@ -321,11 +331,40 @@ h1{
 .show {display:block;} 
 
 
+.Titulo {
+font-size: 30px;
+font-weight: bold;
+margin: 5px 5px 5px 5px;
+padding: 1px 1px 1px 1px;
+font-family: Bariol;
+color: #38393b;
+
+}
+.imgReview { 
+float: left;
+margin-right: 40px;
+ }
+
+ .review{
+ 	font-size: 23px;
+ 	font-family: Bariol;
+ 	color: #38393b;
+ 	margin-bottom: 15px;
+ 	margin-right: 10px;
+ 	padding: 1px 1px 1px 1px;
+ }
+
+
 
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px ) {
 
+.imgReview { 
+	width: 585px; 
+	height: 316px;
+
+ }
 
 
 #contenedor {
@@ -454,6 +493,13 @@ h1{
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px ) { 
+
+.imgReview { 
+display: none;
+
+ }
+
+
 
 .dropdown {
     position: relative;
