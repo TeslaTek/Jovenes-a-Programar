@@ -10,16 +10,16 @@
 	  <link rel="stylesheet" href="css/style.css">
 	  <script src="jquery-3.2.1.js"></script> 
  	  <script src="tools.js"></script> 
- 	  <script src="secondEntrega.js"></script>
+ 
 
  </head>
 
-<body onload="Reloj()">
+<body onload="categoriaT()">
 <!--contenedor-->
 <div id="contenedor">
 <!-- cabecera -->
 	<div id="cabecera">
-		<div id="logo"><p>OPA</p></div>
+		<div id="logo" class="logote"  onclick="window.location='index.html'"><p>OPA</p></div>
 
 		<div id="buscador">
 			<form action="index.html" method="post">
@@ -70,8 +70,8 @@
 <!-- / cabecera -->
 <!-- Principal -->
 	<main id="principal">
-	<h2>Ofertas del Dia:</h2>
-			<h2 id="CountDown"></h2> 
+	<h2>Ofertas para el tiempo libre:</h2>
+			
   <!-- las imagines as puse en tamaño grande para que se vea que la cabecera esta fija-->
 
 			 <div id="products" class="products-container"> </div>

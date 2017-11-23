@@ -149,8 +149,8 @@ body{
 	padding-top: 80px;
 }
 
-#cabecera #logo{
-	color: black;
+.logote{
+	cursor: pointer;
 	display: block;
 	float:left;
 	margin:0 1% 0 0;
@@ -164,12 +164,11 @@ body{
 
 }
 
-#logo p{
+.logote p{
 	display: inline-block;
 	cursor: pointer;
 	font-weight: bold;
 	position: relative;
-	color:black;
 	font-size: 30px;
 	color: white;
 	margin-top: 32%;
@@ -178,7 +177,7 @@ body{
 }
 
 
-#cabecera #logo img{
+.logote img{
 	width: 100px;
 	height: 100px;
 	margin: 0;
@@ -352,8 +351,14 @@ margin-right: 40px;
  	margin-bottom: 15px;
  	margin-right: 10px;
  	padding: 1px 1px 1px 1px;
+ 	word-wrap: break-word;
  }
 
+.products-container {
+	margin-right: 5px;
+	padding-right: 3px;
+	margin-left: 0px;
+}
 
 
 
@@ -361,6 +366,7 @@ margin-right: 40px;
 @media only screen and (max-width : 992px ) {
 
 .imgReview { 
+	clear: both;
 	width: 585px; 
 	height: 316px;
 
@@ -388,8 +394,7 @@ margin-right: 40px;
 	width: 20%;
 	height: 100%;
 }
-
-#cabecera #logo{
+.logote{
 	position: relative;
 	margin-top: 1%;
 	margin-left: 20%;
@@ -475,7 +480,7 @@ margin-right: 40px;
     cursor: pointer;
 }
 
-#cabecera #logo{
+.logote{
 	position: relative;
 	margin-top: 1%;
 	margin-left: 5%;
@@ -486,6 +491,15 @@ margin-right: 40px;
 	display: inline-block; 
 	float: right;
 	 }
+.products-container { 
+width: 585px; 
+ }
+
+ .imgReview { 
+clear: both;
+margin: 0px 0px 0px 0px;
+ }
+
 
 
 
@@ -521,7 +535,7 @@ nav {
 #cabecera #buscador{ display: none;
 }
 
-#cabecera #logo{
+.logote{
 	color: white;
 	display: block;
 	float:left;
@@ -536,7 +550,7 @@ nav {
 
 }
 
-#logo p{
+.logote p{
 	color:white;
 	font-size: 25px;
 	margin-top: 4%;
@@ -570,5 +584,9 @@ nav {
 #pie{width: 100%;
 	margin-left:0; 
 }
+
+.products-container { 
+width: 95%;
+ }
 
 }
