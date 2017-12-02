@@ -1,23 +1,20 @@
 <!DOCTYPE html>
-<html >
+<html>
 <head>
-	  <meta charset="UTF-8">}
-	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 	
-
-	  <title>OPA! - Ofertas de verdad</title>
-
-	  <link rel="stylesheet" href="css/style.css">
+	<title>Page Title</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style Formulario registro.css">
 	  <script src="jquery-3.2.1.js"></script> 
- 	  <script src="tools.js"></script> 
+	  
+	 <script src="usuario.js"></script> 
 
-
- </head>
-
-<body onload="categoria('hotel'), cargarLogin()">
-<!--contenedor-->
-<div id="contenedor">
-<!-- cabecera -->
+</head>
+</head>
+<body onload="cargarRegistro()">
+	<!-- contenedor -->
+	<div id="contenedor">
+	<!-- cabecera -->
 	<div id="cabecera">
 		<div id="datos"></div>
 		<div id="logo" class="logote"  onclick="window.location='index.html'"><p>OPA</p></div>
@@ -26,12 +23,14 @@
 			<form action="index.html" method="post">
 				Buscar &nbsp; <input name="busqueda" type="text">
 			</form>
+			 <a href="formulario%20login.html" >Login</a>
+			  <a href="formulario%20regitrarse.html" >Registrarse</a>
 		</div>
-		
+			
 		 <div class="dropdown" >
   <button onclick="dropMenu()" class="dropbtn">Menu</button>
   <div id="myDropdown" class="dropdown-content">
-    <a href="Restaurantes.html" >Restaurantes</a>
+     <a href="Restaurantes.html" >Restaurantes</a>
     <a href="Estetica.html" >Estética</a>
     <a href="Tiempo.html" >Tiempo Libre</a>
     <a href="Hoteles.html" >Hoteles en Uruguay</a>
@@ -42,11 +41,10 @@
 			</form>
 
   </div>
-
 </div> 
 
 <!-- Menu principal -->
-	<nav id="menu">
+	<nav id="menu" class="botondemenu">
 		<ul id="menu_principal">
 		
 			<li ><a href="Restaurantes.html" >Restaurantes</a></li>
@@ -60,6 +58,7 @@
 			<li ><a href="Viajes.html">Viajes Internacionales</a></li>
 		
 			<li ><a href="Servicios.html">Servicios varios</a></li>
+		
 
 		</ul>
 		<div class="clear"></div>
@@ -69,20 +68,40 @@
 	</div>
 <!-- / Menu principal -->
 <!-- / cabecera -->
-<!-- Principal -->
-	<main id="principal">
-	<h2>Ofertas de hoteles en Uruguay:</h2>
-			
-  <!-- las imagines as puse en tamaño grande para que se vea que la cabecera esta fija-->
+	<div id="formulario">
+		<h3 id="registrarsetitulo">Registrarse</h3>
+ 
+		<form action="#"  method="post" name="registro" onsubmit="return guardarDatos()">
+		<div id="campos">
+		<div id="obligatorios"> <h2> * Campos obligatorios </h2> </div>
+		<input  id="nombre" type="text" name="nombre"  maxlength="30" placeholder="Nombre" required=""  pattern="[A-Za-z]+"/>
+		<input id="Apellidos" type="text" name="apellidos"  maxlength="80" placeholder="Apellidos" required="" pattern="[A-Za-z]+" />
 
-			 <div id="products" class="products-container"> </div>
-            
-        
-			
-	</main>
-<!-- /Principal -->
- <!-- Pie-->
-	<div id="pie">
+		<br/><br/>
+		<input id="Email" type="Email" name="mail"  checked="checked" placeholder="Email" required="" /> <br><br>
+		 <input id="Usuario" type="text" name="Usuario" minlength="3" maxlength="10" placeholder="Usuario" required="" pattern="[A-Za-z]+"/>
+
+		<input id="Contraseña" type="password" name="mail"  minlength="5" maxlength="15" checked="checked" placeholder="Contraseña" required="" pattern="[A-Za-z0-9]+"/>
+ 
+		<br><br>
+		<label for="sexo">Sexo:</label><br>
+		<input id="M" type="radio" name="gender" value="male"> Masculino
+ 	 <input id="F" type="radio" name="gender" value="female"> Femenino
+ 	 <input id="O" type="radio" name="gender" value="other"> Otro
+		<br/><br/>
+		<input id="politica" name="suscribir" type="checkbox" value="suscribir" checked="checked"/> Acepto recibir notificaciones por e-mail
+		<br/>
+	 <input id="terminos" name="suscribir" type="checkbox" value="suscribir" checked="checked"/> Lei y acepto los terminos y condiciones y politica de privacidad
+		<br/><br/>
+ 		</div>
+		<input class="button" type="submit" name="enviar" value="Registrarse"   />
+
+		</form>
+		 </div>
+
+
+		<div id="pie">
+		
 	        <table>
             <tr>
  
@@ -105,16 +124,13 @@
             </tr>
         </table>
 
-	</div>
+		</div>
 		<div class="clear"></div>
 	
-	<!-- /Pie -->
-<!-- / contenedor -->
-</div>
+	<!-- /Pie -->	
+		</div>	
+<!-- /contenedor -->
 
-
-    <script src="./resources/js/services.js"></script>
-    <script src="./resources/js/productos.js"></script>
-     <script src="usuario.js"></script>
 </body>
 </html>
+	

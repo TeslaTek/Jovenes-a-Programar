@@ -15,16 +15,17 @@
  	  
  </head>
 
-<body onload="mostrarProductos(),Reloj()">
+<body onload="mostrarProductos(),Reloj(), cargarLogin()">
 <!--contenedor-->
 <div id="contenedor">
 <!-- cabecera -->
 	<div id="cabecera">
-		<div id="logoIndex" class="logote" ><p   >OPA</p></div>
+		<div id="datos"></div>
+		<div id="logoIndex" class="logote" ><p>OPA</p></div>
  
 		<div id="buscador">
-			<form action="index.html" method="post">
-				Buscar &nbsp; <input name="busqueda" type="text">
+			<form id="search" action="#" method="post" >
+				Buscar &nbsp; <input id="campo" name="busqueda" type="text" >
 			</form>
 		</div>
 		
@@ -64,7 +65,7 @@
 		</ul>
 		<div class="clear"></div>
 	</nav>
-<div class="Botones"><div id="carrito"><img src="images/cart.png"></div><div id="user"><a href="Registro.html"><img src="images/NewU2.png"></a></div></div>
+<div class="Botones"><div id="carrito"><img src="images/cart.png"></div><div id="user"><a href="formulario regitrarse.html"><img src="images/NewU2.png"></a></div></div>
 
 	</div>
 <!-- / Menu principal -->
@@ -115,6 +116,7 @@
  	  
     <script src="./resources/js/services.js"></script>
     <script src="./resources/js/productos.js"></script>
+     <script src="usuario.js"></script>
  
 </body>
 </html>

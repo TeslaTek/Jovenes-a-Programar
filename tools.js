@@ -40,7 +40,7 @@ function dropMenu() {
 
 // Close the dropdown menu if the user clicks outside of it
 window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn') && !event.target.mathes('#busca')) {
+  if (!event.target.matches('.dropbtn') && !event.target.matches('#busca')) {
 
     var dropdowns = document.getElementsByClassName("dropdown-content");
     var i;

@@ -14,11 +14,12 @@
 
  </head>
 
-<body onload="categoriaT()">
+<body onload="categoria('tiempo'), cargarLogin()">
 <!--contenedor-->
 <div id="contenedor">
 <!-- cabecera -->
 	<div id="cabecera">
+		<div id="datos"></div>
 		<div id="logo" class="logote"  onclick="window.location='index.html'"><p>OPA</p></div>
 
 		<div id="buscador">
@@ -63,7 +64,7 @@
 		</ul>
 		<div class="clear"></div>
 	</nav>
-<div class="Botones"><div id="carrito"><img src="images/cart.png"></div><div id="user"><a href="Registro.html"><img src="images/NewU2.png"></a></div></div>
+<div class="Botones"><div id="carrito"><img src="images/cart.png"></div><div id="user"><a href="formulario regitrarse.html"><img src="images/NewU2.png"></a></div></div>
 
 	</div>
 <!-- / Menu principal -->
@@ -114,5 +115,6 @@
 
     <script src="./resources/js/services.js"></script>
     <script src="./resources/js/productos.js"></script>
+     <script src="usuario.js"></script>
 </body>
 </html>

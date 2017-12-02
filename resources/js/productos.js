@@ -83,111 +83,9 @@ function cambioPagina(data,x) {
 
 
 
-function categoriaE(){ 
-var factor = "estetica";
 
-$.ajax({
-        url: "http://localhost:3000/productos",
-        contentType: "application/json",
-        type: "GET"
-    }).done(function(data) {  
-        // Tengo los datos 
-        $.each(data, function(i, item) {
-            
-            if ( data[i].tipo == factor){
-           var products = $("#products");
-        // Generamos el nodo html con los datos que vienen en el JSON 
-        var html = '<a  class= "Producto" id="'+ data[i].id +'" style="background-image: url('+data[i].imagen+')"  onclick="ofertum(this.id)">' + 
-        '<p class="Promo">'+ data[i].descripcion + '</p></a>' ; 
-        // Agregamos en el contenedor de productos el html para cada dato del listado
-        products.append(html);
-        }
-        })
-    });
+function categoria(factor){ 
 
-
-}
-
-function categoriaR(){ 
-var factor = "restaurant";
-
-$.ajax({
-        url: "http://localhost:3000/productos",
-        contentType: "application/json",
-        type: "GET"
-    }).done(function(data) {  
-        // Tengo los datos 
-        $.each(data, function(i, item) {
-            
-            if ( data[i].tipo == factor){
-           var products = $("#products");
-        // Generamos el nodo html con los datos que vienen en el JSON 
-        var html = '<a  class= "Producto" id="'+ data[i].id +'" style="background-image: url('+data[i].imagen+')"  onclick="ofertum(this.id)">' + 
-        '<p class="Promo">'+ data[i].descripcion + '</p></a>' ; 
-        // Agregamos en el contenedor de productos el html para cada dato del listado
-        products.append(html);
-        }
-        })
-    });
-
-
-}
-
-
-function categoriaT(){ 
-var factor = "tiempo";
-
-$.ajax({
-        url: "http://localhost:3000/productos",
-        contentType: "application/json",
-        type: "GET"
-    }).done(function(data) {  
-        // Tengo los datos 
-        $.each(data, function(i, item) {
-            
-            if ( data[i].tipo == factor){
-           var products = $("#products");
-        // Generamos el nodo html con los datos que vienen en el JSON 
-        var html = '<a  class= "Producto" id="'+ data[i].id +'" style="background-image: url('+data[i].imagen+')"  onclick="ofertum(this.id)">' + 
-        '<p class="Promo">'+ data[i].descripcion + '</p></a>' ; 
-        // Agregamos en el contenedor de productos el html para cada dato del listado
-        products.append(html);
-        }
-        })
-    });
-
-
-}
-
-
-function categoriaH(){ 
-var factor = "hotel";
-
-$.ajax({
-        url: "http://localhost:3000/productos",
-        contentType: "application/json",
-        type: "GET"
-    }).done(function(data) {  
-        // Tengo los datos 
-        $.each(data, function(i, item) {
-            
-            if ( data[i].tipo == factor){
-           var products = $("#products");
-        // Generamos el nodo html con los datos que vienen en el JSON 
-        var html = '<a  class= "Producto" id="'+ data[i].id +'" style="background-image: url('+data[i].imagen+')"  onclick="ofertum(this.id)">' + 
-        '<p class="Promo">'+ data[i].descripcion + '</p></a>' ; 
-        // Agregamos en el contenedor de productos el html para cada dato del listado
-        products.append(html);
-        }
-        })
-    });
-
-
-}
-
-
-function categoriaV(){ 
-var factor = "viaje";
 
 $.ajax({
         url: "http://localhost:3000/productos",
@@ -214,9 +112,13 @@ $.ajax({
 
 
 
-function categoriaS(){ 
-var factor = "servicio";
 
+
+$("#search").submit(function(){ 
+    var palabra = $("#campo").val();
+
+    $("#products").empty();                                                                                                                                                      
+    var bandera = false;
 $.ajax({
         url: "http://localhost:3000/productos",
         contentType: "application/json",
@@ -224,8 +126,10 @@ $.ajax({
     }).done(function(data) {  
         // Tengo los datos 
         $.each(data, function(i, item) {
+
             
-            if ( data[i].tipo == factor){
+            if ( data[i].review.indexOf(palabra) != -1){
+                bandera = true;
            var products = $("#products");
         // Generamos el nodo html con los datos que vienen en el JSON 
         var html = '<a  class= "Producto" id="'+ data[i].id +'" style="background-image: url('+data[i].imagen+')"  onclick="ofertum(this.id)">' + 
@@ -233,14 +137,19 @@ $.ajax({
         // Agregamos en el contenedor de productos el html para cada dato del listado
         products.append(html);
         }
-        })
+        });
+ if (!bandera){
+            var error = '<h2 style="color:red"> No hay resultados para esa busqueda</h2>';
+            $("#products").append(error);
+         }
+
     });
 
+ 
+         return false;
 
 }
-
-
-
+)
 
 
 
