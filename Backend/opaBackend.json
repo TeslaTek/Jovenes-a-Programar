@@ -1,97 +1,104 @@
-{ "productos":[
+{
+  "productos": [
     {
       "id": 1,
       "name": "electrodomesticos",
       "descripcion": "Descuento en electrodomesticos",
-      "tipo":"servicio",
+      "tipo": "servicio",
       "imagen": "images/Ofertas/cafetera.jpg",
-      "titulo":"¿Molido o monodosis? Poder elegir es un pequeño gran acierto",
-      "review":"Dos sistemas de preparación: La rapidez y la fácil limpieza hacen que muchas personas se inclinen por el café en monodosis. Con la nueva CE7151 no hace falta elegir entre monodosis de café E.S.E, o café molido para cafeteras expreso, ya que puede funcionar de las dos maneras. Un expresso con toda su crema: Con una bomba de 15 bares, la cafetera expresso CE7151 prepara un café de calidad en casa, con esa crema característica del café elaborado con presión.",
-      "imagenReview":"images/Review/cafetera.png"
+      "titulo": "¿Molido o monodosis? Poder elegir es un pequeño gran acierto",
+      "review": "Dos sistemas de preparación: La rapidez y la fácil limpieza hacen que muchas personas se inclinen por el café en monodosis. Con la nueva CE7151 no hace falta elegir entre monodosis de café E.S.E, o café molido para cafeteras expreso, ya que puede funcionar de las dos maneras. Un expresso con toda su crema: Con una bomba de 15 bares, la cafetera expresso CE7151 prepara un café de calidad en casa, con esa crema característica del café elaborado con presión.",
+      "imagenReview": "images/Review/cafetera.png",
+      "compra": 0
     },
     {
       "id": 2,
       "name": "Cine",
       "descripcion": "25% de descuento en Cine",
-      "tipo":"tiempo",
+      "tipo": "tiempo",
       "imagen": "images/Ofertas/cine.jpg",
-      "titulo":"El Hijo de Piegrande",
-      "review": "Adam, emprende una misión épica y audaz para descubrir el misterio detrás de su padre perdido hace mucho tiempo, sólo para descubrir que él es nada menos que… ¡el legendario Pie Grande! Él ha estado escondido en el bosque durante años para protegerse a sí mismo y a su familia de HairCo., una ambiciosa corporación ansiosa por ejecutar experimentos científicos con su especial ADN. A medida que padre e hijo comienzan a compensar el tiempo perdido, Adam pronto descubre que él también está dotado de superpoderes que van más allá de su imaginación."    ,
-      "imagenReview":  "images/Review/cine.png"    
+      "titulo": "El Hijo de Piegrande",
+      "review": "Adam, emprende una misión épica y audaz para descubrir el misterio detrás de su padre perdido hace mucho tiempo, sólo para descubrir que él es nada menos que… ¡el legendario Pie Grande! Él ha estado escondido en el bosque durante años para protegerse a sí mismo y a su familia de HairCo., una ambiciosa corporación ansiosa por ejecutar experimentos científicos con su especial ADN. A medida que padre e hijo comienzan a compensar el tiempo perdido, Adam pronto descubre que él también está dotado de superpoderes que van más allá de su imaginación.",
+      "imagenReview": "images/Review/cine.png",
+      "compra": 0
     },
     {
       "id": 3,
       "name": "Corte",
       "descripcion": "Corte de pelo a mitad de precio",
-      "tipo":"estetica",
+      "tipo": "estetica",
       "imagen": "images/Ofertas/Coiffeur.jpg",
       "titulo": "Lina Pacella",
       "review": "Con más de 28 años de experiencia, una amplia y fructífera trayectoria Lina Pacella te ofrece las mejores opciones y el mejor asesoramiento de belleza.Esta profesión exige actualizaciones constantes, permanentes contactos en todo el mundo y un seguimiento continuo de los avances de la tecnología y nuevos métodos. He podido comprobar en diferentes culturas en todo el mundo que la calidad reside en el perfeccionamiento, es por eso que día a día seguimos investigando, creciendo, apostando a lo que hacemos, y mejorando como personas, para brindarte la respuesta justa y la solución que necesitas.",
-      "imagenReview":"images/Review/corte.jpg"
+      "imagenReview": "images/Review/corte.jpg",
+      "compra": 0
     },
     {
       "id": 4,
       "name": "Crucero",
       "descripcion": "Viajes en crucero",
-      "tipo":"viaje",
+      "tipo": "viaje",
       "imagen": "images/Ofertas/crucero.jpg",
-      "titulo":"Cuba con aéreos, crucero por el Caribe y hotel all inclusive en Varadero",
-      "review":"Descubrí este fascinante país, con su belleza preservada y amigables lugareños, y dejanos la planificación a nosotros para que sólo tengas que ocuparte de relajarte. Disfrutá de Cuba y lo mejor del Caribe con aéreos ida y vuelta a La Habana, crucero de 7 noches por el Caribe y 3 noches de hotel all-inclusive en Varadero, con traslados incluidos. A bordo del MSC Opera desde La Habana, vas a navegar por el soñado mar caribeño en itinerarios que incluyen Costa Maya, Belice, Isla de Roatán, Isla de la Juventud, Montengo Bay, Georgetown y Cozumel*. Caminá por la vieja Habana colonial y sus coloridas calles, y encontrá un mundo oculto de cultura fascinante y un estilo de vida relajado. Ya sea disfrutando del sol en las playas de arena blanca, descubriendo la arquitectura local o disfrutando de la auténtica música callejera, en Cuba hay algo para todos los gustos.",
-      "imagenReview":"images/Review/crucero.jpg"
-
+      "titulo": "Cuba con aéreos, crucero por el Caribe y hotel all inclusive en Varadero",
+      "review": "Descubrí este fascinante país, con su belleza preservada y amigables lugareños, y dejanos la planificación a nosotros para que sólo tengas que ocuparte de relajarte. Disfrutá de Cuba y lo mejor del Caribe con aéreos ida y vuelta a La Habana, crucero de 7 noches por el Caribe y 3 noches de hotel all-inclusive en Varadero, con traslados incluidos. A bordo del MSC Opera desde La Habana, vas a navegar por el soñado mar caribeño en itinerarios que incluyen Costa Maya, Belice, Isla de Roatán, Isla de la Juventud, Montengo Bay, Georgetown y Cozumel*. Caminá por la vieja Habana colonial y sus coloridas calles, y encontrá un mundo oculto de cultura fascinante y un estilo de vida relajado. Ya sea disfrutando del sol en las playas de arena blanca, descubriendo la arquitectura local o disfrutando de la auténtica música callejera, en Cuba hay algo para todos los gustos.",
+      "imagenReview": "images/Review/crucero.jpg",
+      "compra": 0
     },
-     {
+    {
       "id": 5,
       "name": "Deportes",
       "descripcion": "Deportes",
-      "tipo":"tiempo",
+      "tipo": "tiempo",
       "imagen": "images/Ofertas/deporte.jpg",
       "titulo": "Lazaro KiteSurf",
       "review": "Lázaro Kiteschool es una escuela que viene desde el Caribe (Cuba) brindando la mejor alegría y pasión por el deporte. Fundada en el año 2009 por instructores profesionales calificados IKO (Organización Internacional de Kiteboarding) llega a Uruguay en el 2011 y desde entonces conforma uno de los dos IKO CENTER en Uruguay. Resultado del esfuerzo de un grupo de amigos que comparten la misma pasión. Pertenecemos A.U.W.K.S (Asociación Uruguaya de Windsurf, Kitesurf, y Paddleboard) siendo miembro de la comisión y al grupo de kitesurfistas(Kitegroup Montevideo). Proporcionando los mejores equipos y un sistema de seguridad de primer nivel. Logrando así la máxima satisfacción de nuestros alumnos. Nuestros instructores IKO constantemente están activos y llevan a cabo una educación ON LINE manteniéndolos con una fresca metodología para impartir las clases y lograr un óptimo resultado. Todos ellos son instructores vocacionales que se toman cada lección de kitesurf como un reto personal, van a poner todo su entusiasmo en conseguir que disfrutes de las sensaciones del kitesurf, sin olvidar en ningún momento tu seguridad.Para nosotros el mejor premio es introducir un nuevo rider en el mundo del kitesurf.",
-      "imagenReview": "images/Review/deporte.jpg"
+      "imagenReview": "images/Review/deporte.jpg",
+      "compra": 0
     },
-     {
+    {
       "id": 6,
       "name": "Dulces",
       "descripcion": "Dulces artesanales",
-      "tipo":"restaurant",
+      "tipo": "restaurant",
       "imagen": "images/Ofertas/Jam.jpg",
-      "titulo": "Caseras de India Muerta" ,
+      "titulo": "Caseras de India Muerta",
       "review": "Somos una agroindustria familiar dedicada a la elaboración artesanal de mermeladas, jaleas, dulces en almíbar, salsas, licores, panificados, refresco de butiá, entre otros. Nuestro nombre, Caseras de India Muerta, se debe al paraje rural donde nació la empresa en 1996, en el departamento de Rocha, Uruguay. Buscamos un equilibrio entre el rescate de antiguas tradiciones y la incorporación de nuevas recetas y procesos basados en los más exigentes controles de calidad. Desde hace más de 20 años, nuestro compromiso se expresa día a día en el cariño y la dedicación con que elaboramos cada uno de nuestros productos.Enclavado en un privilegiado entorno natural, a más de 200 metros sobre el nivel del mar, se encuentra el establecimiento Los Timbóes, donde elaboramos nuestros productos.  ",
-      "imagenReview": "images/Review/Jam.jpg"
+      "imagenReview": "images/Review/Jam.jpg",
+      "compra": 0
     },
     {
       "id": 7,
       "name": "Lavarropas",
       "descripcion": "Descuento en electrodomesticos",
-      "tipo":"servicio",
+      "tipo": "servicio",
       "imagen": "images/Ofertas/Lavarropas.jpg",
       "titulo": "Lavarropas Carga Frontal – 6 kg",
       "review": "Whirlpool Corporation es líder mundial en grandes electrodomésticos, con ventas anuales de aproximadamente 21.000 millones de dólares en 2015 operando en más de 170 países, con más de 97.000 trabajadores y 70 centros de fabricación e investigación de tecnología en el mundo. La compañía comercializa las marcas Whirlpool, Maytag, KitchenAid, Jenn-Air, Amana, Brastemp, Bauknecht, Consul y otras grandes marcas de consumo alrededor del mundo. Nuestra meta es liderar globalmente el sector de línea blanca, a través del incentivo al éxito individual, del equipo, de la unidad, del negocio y de la Compañía como un todo. Tenemos como objetivo ser una gran Compañía, donde el Espíritu de Victoria también signifique espíritu de ciudadanía y de ayuda a las personas en nuestras comunidades, para promover y contribuir en la mejora de las condiciones de vida.",
-      "imagenReview":"images/Review/lavarropas.jpg"
-
+      "imagenReview": "images/Review/lavarropas.jpg",
+      "compra": 0
     },
     {
       "id": 8,
       "name": "Cena",
       "descripcion": "Cena para dos en Restaurante ",
-      "tipo":"restaurant",
+      "tipo": "restaurant",
       "imagen": "images/Ofertas/restaurant.jpg",
       "titulo": "Día de Ñoquis en restaurant Carbonada",
       "review": "Saboreando este plato, la tradición asegura suerte por 30 días seguidos. Los más supersticiosos, comen apenas siete ñoquis, masticándolos siete veces cada uno. Otros los devoran todos, pues juzgan más importante que no haya sobras. Los gnocchis surgieron en Italia; pero los incrédulos afirman que la costumbre de poner dinero bajo los platos surgió en América del Sur, como estrategia de los restaurantes que necesitaban aumentar la clientela.La leyenda cuenta que un fraile llegó a una pequeña localidad italiana, un día 29, y tocó la puerta de una trattoria. Pidió un plato de comida y recibió el único alimento que había: ñoquis. Tiempo después, volvió al local y contó a los propietarios que, después de comer aquel plato, su vida había cambiado para mejor. ",
-      "imagenReview": "images/Review/restaurant.jpg"
+      "imagenReview": "images/Review/restaurant.jpg",
+      "compra": 0
     },
-        {
+    {
       "id": 9,
       "name": "Secador",
       "descripcion": "Descuento en electrodomesticos",
-      "tipo":"estetica",
+      "tipo": "estetica",
       "imagen": "images/Ofertas/Secador.jpg",
-      "titulo" : "Secador Scirocco 5D GA.MA",
+      "titulo": "Secador Scirocco 5D GA.MA",
       "review": "Motor DC : Los secadores de uso hogareño, cuentan con un potente motor DC de bajo peso y altas prestaciones. Así, este tipo de secadores pueden ofrecer una gran capacidad de secado, en una herramienta liviana y de bajo nivel de ruido. 3 temperaturas. 2 velocidades. Cool Shot: Emite un flujo de aire a temperatura ambiente, que permite fijar el peinado deseado. Tecnología halógena: Ayuda a desarrollar un calor mucho más eficiente que en los secadores convencionales.",
-      "imagenReview": "images/Review/secador.jpg"
+      "imagenReview": "images/Review/secador.jpg",
+      "compra": 0
     }
-
   ],
   "categories": [
     {
