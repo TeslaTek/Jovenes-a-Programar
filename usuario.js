@@ -40,7 +40,7 @@ function mostrarDatos() {
     if ((localStorage.nombre != undefined) && (localStorage.password != undefined)) {
         // Mostrar DAtos del usuario Logueado
         document.getElementById("datos").innerHTML = "User: " + localStorage.nombre;
-        document.getElementById("datos").innerHTML += '<button class="botonsalir" onclick="Salir()"><span> Salir </span> </button> ' ;
+        document.getElementById("datos").innerHTML += '<button class="button" onclick="Salir()"><span> Salir </span> </button> ' ;
         document.getElementById("login").className +="ocultar";
 
     } 
