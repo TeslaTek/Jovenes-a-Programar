@@ -154,8 +154,8 @@ $.ajax({
 
 
 
-$("#search").submit(function(){ 
-    var palabra = $("#campo").val();
+$(".search").submit(function(){ 
+    var palabra = $(".busca").val().toLowerCase();
 
     $("#products").empty();                                                                                                                                                      
     var bandera = false;
@@ -168,7 +168,7 @@ $.ajax({
         $.each(data, function(i, item) {
 
             
-            if ( data[i].review.toLowerCase().indexOf(palabra) != -1){
+            if ( (data[i].review.toLowerCase().indexOf(palabra) != -1) ||  (data[i].titulo.toLowerCase().indexOf(palabra) !=-1)  ){
                 bandera = true;
            var products = $("#products");
         // Generamos el nodo html con los datos que vienen en el JSON 
